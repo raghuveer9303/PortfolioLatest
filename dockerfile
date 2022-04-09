@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
-COPY . /Raghu Portfolio/
+COPY  . /RPort
 RUN npm install
 EXPOSE 80
 CMD ["node", "server.js"]
