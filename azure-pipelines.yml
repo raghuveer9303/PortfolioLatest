@@ -23,7 +23,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'raghudocker.azurecr.io'
+        containerRegistry: 'raghudocker'
         repository: 'portfolioapp'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
