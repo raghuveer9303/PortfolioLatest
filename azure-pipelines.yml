@@ -27,3 +27,5 @@ stages:
         repository: 'portfolioapp'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
+        tags: |
+          '$(Build.BuildId)'
