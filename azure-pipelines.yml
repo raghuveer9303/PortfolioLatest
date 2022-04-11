@@ -26,4 +26,4 @@ stages:
         containerRegistry: 'raghudocker'
         repository: 'portfolioapp'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '**/dockerfile'
