@@ -22,9 +22,8 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an image
       inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/dockerfile'
-        tags: |
-          $(tag)
+        containerRegistry: 'raghudocker.azurecr.io'
+        repository: 'portfolioapp'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
