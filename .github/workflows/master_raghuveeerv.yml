@@ -45,6 +45,3 @@ jobs:
             secrets.AZUREAPPSERVICE_PUBLISHPROFILE_551CCCEAA296408E81768D93AD43F219
             }}
           package: .
-      - shell: |
-          npm install
-          npm run build
